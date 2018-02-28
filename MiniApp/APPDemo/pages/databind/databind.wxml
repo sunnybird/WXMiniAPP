@@ -1,0 +1,12 @@
+<import src="listitem.wxml" />
+<view class="content">
+  <view class='control'>
+    <button bindtap='generateListView'> 动态绑定数据 </button>
+  </view>
+  <view class='result'>
+    <view wx:for="{{listdata}}">
+      <template is="item" data="{{text: index + item.message}}" />
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,7 @@
+<!--pages/calc/calc.wxml-->
+<import src='listitem.wxml'>
+  <view class='content'>
+    <view wx:for="numberlist">
+      <template is="paymentitem" data="{{id:index,payamount:item.payamunt,costamunt:item.costamunt}}" />
+    </view>
+  </view>

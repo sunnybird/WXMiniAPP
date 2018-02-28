@@ -1,0 +1,7 @@
+<template name="paymentitem">
+  <view class="listitem">
+    <text>{{id}}</text>
+    <input focus='true' placeholder='输入消费金额' bindinput='enterAmount({{id}})' text="{{costamunt}}"></input>
+    <text>{{payamount}}</text>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<!--pages/main/main.wxml-->
+<view class='body'>
+
+  <view class='content'>
+
+    <input placeholder='输入 AA 总人数' type='number' focus='true' bindinput='inputAmount' />
+    <button bindtap='enterCalc'> 确认</button>
+  </view>
+
+</view>
