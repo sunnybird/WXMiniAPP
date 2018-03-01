@@ -1,7 +1,7 @@
 <template name="paymentitem">
   <view class="listitem">
     <text class='listitem_id item_text'>{{id}}</text>
-    <input class='listitem_cost item_text' focus='true' placeholder='输入消费金额' bindinput='enterAmount({{id}})' text="{{costamount}}" bindinput='inputCostAmount' data-index="{{id}}"></input>
+    <input class='listitem_cost item_text' focus='true' placeholder='输入消费金额' bindinput='enterAmount({{id}})' text="{{costamount}}" bindinput='inputCostAmount' data-index="{{id}}" type='digit'></input>
     <text class='listitem_pay item_text'>{{payamount}}</text>
   </view>
 </template>
