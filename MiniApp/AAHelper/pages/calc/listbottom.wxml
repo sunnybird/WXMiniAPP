@@ -1,0 +1,4 @@
+<view>
+<input  bindinput='inoutSum' placeholder='输入总付款金额' class='item_text'></input>
+<button bindtap='calc'> 计算</button>
+</view>

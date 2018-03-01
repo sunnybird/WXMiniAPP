@@ -1,1 +1,22 @@
 /* pages/calc/calc.wxss */
+
+.listitem {
+  flex-direction: row;
+  display: flex;
+}
+
+.listitem_id {
+  flex: 1;
+}
+
+.listitem_cost {
+  flex: 1;
+}
+
+.listitem_pay {
+  flex: 1;
+}
+
+.item_text{
+  text-align: center;
+}

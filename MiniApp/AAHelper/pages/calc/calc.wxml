@@ -1,7 +1,9 @@
 <!--pages/calc/calc.wxml-->
-<import src='listitem.wxml'>
-  <view class='content'>
-    <view wx:for="numberlist">
-      <template is="paymentitem" data="{{id:index,payamount:item.payamunt,costamunt:item.costamunt}}" />
-    </view>
+<import src='listitem.wxml' />
+<view class='content'>
+  <view wx:for="{{numberlist}}" wx:key="id">
+    <include src="listhead.wxml" wx:if="{{index == 0}}" />
+    <template is="paymentitem" data="{{id:index,payamount:item.payamunt,costamunt:item.costamunt}}" wx:if="{{index != 0 && index != numberlist.length-1}}" />
+    <include src='listbottom.wxml' wx:if="{{index == numberlist.length-1}}"/>
   </view>
+</view>

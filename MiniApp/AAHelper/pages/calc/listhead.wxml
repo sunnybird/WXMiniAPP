@@ -1,0 +1,5 @@
+<view class="listitem">
+    <text class='listitem_id item_text'>序号</text>
+    <text class='listitem_id item_text'>消费金额</text>
+    <text class='listitem_pay item_text'>应付金额</text>
+  </view>

@@ -1,6 +1,11 @@
-function paymentAmount(){
-    var index= 0
-    var costamunt= 0.0
-    var payamount = 0.0
-    
+
+
+const paymentModel = function paymentAmount() {
+  this.id = 0;
+  this.costamunt = 0.0;
+  this.payamount = 0.0;
+}
+
+module.exports = {
+  paymentModel: paymentModel
 }

@@ -1,11 +1,15 @@
 // pages/calc/calc.js
+
+const paymodel = require('payment.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    number : 0
+    numberlist : [],
+    amount : 0
   },
 
   /**
@@ -13,8 +17,24 @@ Page({
    */
   onLoad: function (options) {
     // console.log(options)
-    this.data.number = options['number']
+    this.data.amount = options['number']
     // console.log(this.data.number)
+    // add a head 
+    this.data.numberlist.push(new paymodel.paymentModel())
+
+
+    this.data.amount = 5;
+    for (var i = 0; i < this.data.amount ; i++){
+      this.data.numberlist.push(new paymodel.paymentModel());
+    }
+    // add a foot
+    this.data.numberlist.push(new paymodel.paymentModel())
+
+    console.log(this.data.numberlist)
+
+    this.setData({
+      numberlist: this.data.numberlist
+    })
   },
 
   /**
@@ -64,5 +84,29 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  inputCostAmount:function(e){
+    console.log(e)
+    var index = e.target.dataset.index
+    var costamount = e.detail.value
+    console.log("index  ==" + index)
+    console.log("costamount ==" + costamount)
+    this.data.numberlist[index].costamunt = costamount
+    console.log(this.data.numberlist)
+
+  },
+
+
+  calc : function(e){
+
+
+
+  },
+
+  inoutSum : function(e){
+
+
+    
   }
 })
