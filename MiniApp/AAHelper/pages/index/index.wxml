@@ -11,3 +11,9 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+
+<button bindtap='changeItemInArray' > changeItemInArray </button>

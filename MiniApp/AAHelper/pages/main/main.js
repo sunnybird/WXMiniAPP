@@ -1,7 +1,7 @@
 // pages/main/main.js
 Page({
   data :{
-    peoples:4
+    peoples:0
   },
 
   enterCalc: function(e){
