@@ -1,1 +1,18 @@
 /* pages/main/main.wxss */
+
+page{
+height: 100%;
+background-color: white
+}
+
+.body{
+   top: 50%;
+   position: relative;
+   margin-top: -20%;
+   text-align: center;
+}
+.input-placeholder{
+  color: grey;
+  text-shadow: red;
+  tab-size: 24rpx;
+}

@@ -1,9 +1,7 @@
 // pages/calc/calc.js
-
 const paymodel = require('payment.js')
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -17,7 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(options)
+  
     this.data.amount = options['number']
     // console.log(this.data.number)
     // add a head 
