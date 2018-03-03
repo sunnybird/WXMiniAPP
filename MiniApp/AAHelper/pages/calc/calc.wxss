@@ -3,6 +3,8 @@
 .listitem {
   flex-direction: row;
   display: flex;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
 }
 
 .listitem_id {
@@ -19,4 +21,12 @@
 
 .item_text{
   text-align: center;
+}
+
+.listcontent{
+  margin-top: 8rpx;
+  margin-bottom: 20rpx;
+}
+button{
+  margin-top: 20px;
 }

@@ -45,7 +45,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
   },
 
   /**
@@ -118,6 +117,8 @@ Page({
         this.setData(param)
       }
     }
+
+
   },
 
 
@@ -127,8 +128,10 @@ Page({
     console.log("totalpayCost ==" + this.data.totalpayCost)
   },
 
-
-   sumAllCost: function(){
+  /**
+   * 计算消费总金额
+   */
+  sumAllCost: function(){
    var allcost = 0.0
    for (var i = 1; i <= this.data.amount; i++){
      allcost += parseFloat(this.data.numberlist[i].costamunt)

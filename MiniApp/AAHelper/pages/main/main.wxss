@@ -16,3 +16,16 @@ background-color: white
   text-shadow: red;
   tab-size: 24rpx;
 }
+
+button{
+  margin-top: 10rpx;
+}
+
+input {
+  border-style: solid;
+  border-color: grey;
+  border-radius: 4rpx;
+  border-width: 1rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
