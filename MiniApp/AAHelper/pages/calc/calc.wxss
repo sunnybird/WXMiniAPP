@@ -30,3 +30,16 @@
 button{
   margin-top: 20px;
 }
+
+input{
+  border-style: solid;
+  border-radius: 10rpx;
+  border-width: 2rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+
+.paysum{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
