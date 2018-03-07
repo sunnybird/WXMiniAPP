@@ -104,7 +104,11 @@ Page({
   calc : function(e){
     var allcost = this.sumAllCost()
     console.log("allcost ==" + allcost)
-    if (this.data.totalpayCost > 0){
+
+    console.log("check ==" + this.checkAllCostInput());
+
+    if (this.checkAllCostInput()
+    &&this.data.totalpayCost > 0){
       for (var i = 1; i <= this.data.amount; i++){
 
         var rate = this.data.numberlist[i].costamunt / allcost
@@ -116,6 +120,8 @@ Page({
         param[target] = paymentFormate;
         this.setData(param)
       }
+    }else{
+      wx.vibrateShort({})
     }
 
 
@@ -137,5 +143,20 @@ Page({
      allcost += parseFloat(this.data.numberlist[i].costamunt)
    }
    return allcost
+  },
+
+  /**
+   * 检查是否消费金额全部输入
+   */
+  checkAllCostInput: function(){
+    var hasInputAll = true
+    for (var i = 1; i <= this.data.amount; i++) {
+      var cost = this.data.numberlist[i].costamount
+     if(cost <=0){
+       hasInputAll = false
+       break
+     }
+    }
+    return hasInputAll
   }
 })
